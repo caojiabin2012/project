@@ -2,8 +2,8 @@
 use Common\Utils ;
 ?>
     <?php include(dirname(dirname(__DIR__)).'/header.php');?>
-    <link href="/public/plug/CodeMirror/5.21.0/lib/codemirror.css" rel="stylesheet" type="text/css" />
-    <link href="/public/plug/CodeMirror/5.21.0/addon/display/fullscreen.css" rel="stylesheet" type="text/css" />
+    <link href="/public/plug/code-mirror/5.21.0/lib/codemirror.css" rel="stylesheet" type="text/css" />
+    <link href="/public/plug/code-mirror/5.21.0/addon/display/fullscreen.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
@@ -12,15 +12,15 @@ use Common\Utils ;
         .CodeMirror pre { padding-left: 7px; line-height: 1.25; }
     </style>
 
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/lib/codemirror.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/addon/edit/matchbrackets.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/addon/selection/active-line.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/addon/display/fullscreen.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/addon/comment/continuecomment.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/addon/comment/comment.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/mode/htmlmixed/htmlmixed.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/mode/clike/clike.js"></script>
-    <script type="text/javascript" src="/public/plug/CodeMirror/5.21.0/mode/ruby/ruby.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/lib/codemirror.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/addon/edit/matchbrackets.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/addon/selection/active-line.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/addon/display/fullscreen.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/addon/comment/continuecomment.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/addon/comment/comment.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/mode/htmlmixed/htmlmixed.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/mode/clike/clike.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/mode/ruby/ruby.js"></script>
 
     <div class="container">
         <?php include(dirname(dirname(__DIR__)).'/navbar.php');?>
