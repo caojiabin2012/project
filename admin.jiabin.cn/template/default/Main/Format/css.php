@@ -23,7 +23,7 @@ use Common\Utils ;
     <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/mode/clike/clike.js"></script>
 
    
-    <script type="text/javascript" src="/public/plug/codemirror/5.21.0/mode/css/css.js"></script>
+    <script type="text/javascript" src="/public/plug/code-mirror/5.21.0/mode/css/css.js"></script>
     
 
     <div class="container">
