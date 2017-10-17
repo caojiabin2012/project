@@ -2,14 +2,11 @@
 namespace Ctrl\Main;
 
 use ZPHP\Controller\IController;
-
 use ZPHP\Core\Config;
-
 use ZPHP\Protocol\Request;
-
 use ZPHP\View;
-
 use Common;
+use Overtrue\Pinyin\Pinyin;
 
 class Code extends \Ctrl\Admin implements IController
 {
@@ -51,15 +48,23 @@ class Code extends \Ctrl\Admin implements IController
         $view->display();
     }
 
-    /**
-     * @param  int
-     * @param  array
-     * @return [type]
-     */
-    public function aa(int $a,array $b)
+    public function translate()
     {
-        return false;
+        return [];
     }
 
+    public function translateData()
+    {
+        $params         = Request::getParams();
+        $str            = $params['str'];
+        $type           = $params['type'];
+        $pinyin = new Pinyin();
+        if($type == 0) {
+            $data = $pinyin->sentence($str, true);
+        }elseif ($type == 1) {
+            $data = $pinyin->name($str, PINYIN_UNICODE);
+        }
+        return ['_view_mode' => 'Json', 'pinyin' => $data];
+    }
 }
 

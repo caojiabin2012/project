@@ -6,7 +6,7 @@ return array(
     'server_mode' => 'Socket',
     'project_name' => 'admin.jiabin.cn',
     'project' => [
-        'app_host' => '172.16.1.212:8888',
+        'app_host' => '192.168.1.163:8888',
 	'default_ctrl_name' => 'Main\Main'
     ],
     'app_path' => 'apps',
@@ -17,7 +17,7 @@ return array(
         'adapter' => 'Swoole',                          //socket 驱动模块
         'server_type' => Swoole::TYPE_HTTP,              //socket 业务模型 tcp/udp/http/websocket
         'protocol' => 'Http',                         //socket通信数据协议
-        'daemonize' => 1,                             //是否开启守护进程
+        'daemonize' => 0,                             //是否开启守护进程
         'client_class' => 'Socket\\SwooleHttp',            //socket 回调类
         'work_mode' => 3,                             //工作模式：1：单进程单线程 2：多线程 3： 多进程
         'worker_num' => 4,                                 //工作进程数

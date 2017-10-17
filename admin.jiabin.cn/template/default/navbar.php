@@ -60,7 +60,7 @@ use Common\Utils;
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">代码处理  <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="<?=Utils::makeUrl('Main/Code', 'diff')?>" style="color: #F34925">文本/代码对比工具</a></li>
-                        <li><a href="<?=Utils::makeUrl('Main/Code', 'highlight')?>">在线代码着色高亮</a></li>
+                        <li><a href="<?=Utils::makeUrl('Main/Code', 'translate')?>">在线文本转换拼音工具</a></li>
                     </ul>
                 </li>
 
